@@ -1,7 +1,3 @@
-<a href="https://www.npmjs.com/package/react-native-google-places-autocomplete">
-  <img alt="npm version" src="https://img.shields.io/npm/v/react-native-google-places-autocomplete"/>
-</a>
-
 # Google Maps Search Component for React Native
 
 **Customizable Google Places autocomplete component for iOS and Android React-Native apps**
@@ -11,7 +7,7 @@
 <p align="center">
   <br/>
   <a href="https://bit.ly/3rneTTI" target="_blank">
-    <img src="https://raw.githubusercontent.com/FaridSafi/react-native-google-places-autocomplete/master/Assets/expensify-logo.png">
+    <img src="./Assets/expensify-logo.png">
   </a>
   <br>
   <p align="center">
@@ -26,20 +22,20 @@
 
 ## Preview
 
-![](https://raw.githubusercontent.com/FaridSafi/react-native-google-places-autocomplete/master/Assets/screenshot.png)
+![Screenshots](./Assets/screenshot.png)
 
 ## Installation
 
 **Step 1.**
 
 ```
-npm install react-native-google-places-autocomplete --save
+npm install @logicwind/react-native-google-places-autocomplete
 ```
 
 or
 
 ```
-yarn add react-native-google-places-autocomplete
+yarn add @logicwind/react-native-google-places-autocomplete
 ```
 
 **Step 2.**
@@ -56,7 +52,7 @@ Enable "Google Maps Geocoding API" if you want to use GoogleReverseGeocoding for
 
 ```js
 import React from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 const GooglePlacesInput = () => {
   return (
@@ -77,8 +73,6 @@ const GooglePlacesInput = () => {
 export default GooglePlacesInput;
 ```
 
-You can also try the basic example in a snack [here](https://snack.expo.io/@sbell/react-native-google-places-autocomplete)
-
 ## More Examples
 
 **Get Current Location**
@@ -94,7 +88,7 @@ Please make sure you follow the installation instructions there and add `navigat
 
 ```js
 import React from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 // navigator.geolocation = require('@react-native-community/geolocation');
 // navigator.geolocation = require('react-native-geolocation-service');
@@ -129,7 +123,7 @@ export default GooglePlacesInput;
 
 ```js
 import React from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 const homePlace = {
   description: 'Home',
@@ -169,7 +163,7 @@ export default GooglePlacesInput;
 
 ```js
 import React from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 const GooglePlacesInput = () => {
   return (
@@ -203,7 +197,7 @@ This is an example using the Text Input from [`react-native-elements`](https://r
 ```js
 import React from 'react';
 import { Text, View, Image } from 'react-native';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 import { Input } from 'react-native-elements';
 
 const GOOGLE_PLACES_API_KEY = 'YOUR_GOOGLE_API_KEY';
@@ -300,7 +294,7 @@ You can access these methods using a ref.
 
 ```js
 import React, { useEffect, useRef } from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 const GooglePlacesInput = () => {
   const ref = useRef();
@@ -435,7 +429,7 @@ You can optionally specify headers to apply to your request in the `headers` obj
 
 ```js
 import React from 'react';
-import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { GooglePlacesAutocomplete } from '@logicwind/react-native-google-places-autocomplete';
 
 const GooglePlacesInput = () => {
   return (
@@ -532,10 +526,6 @@ Number 1 is used while getting autocomplete results.
 Number 2 is used when you click on a result.  
 Number 3 is used when you select 'Current Location' to load nearby results.  
 Number 4 is used when `nearbyPlacesAPI='GoogleReverseGeocoding'` is set and you select 'Current Location' to load nearby results.
-
-## Changelog
-
-Please see the [releases](https://github.com/FaridSafi/react-native-google-places-autocomplete/releases) tab for the changelog information.
 
 ## License
 
