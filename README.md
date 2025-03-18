@@ -2,6 +2,8 @@
 
 **Customizable Google Places autocomplete component for iOS and Android React-Native apps**
 
+**_Note:_** This is a fork of the library react-native-google-places-autocomplete. Changes have been made to remove headers from API calls and allow the use of a custom backend instead of relying on an API key.
+
 ## Sponsor
 
 <p align="center">
