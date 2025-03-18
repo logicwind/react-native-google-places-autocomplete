@@ -393,9 +393,9 @@ interface GooglePlacesAutocompleteProps {
   isRowScrollable?: boolean;
   keyboardShouldPersistTaps?: 'never' | 'always' | 'handled';
   /** use the ListEmptyComponent prop when no autocomplete results are found. */
-  listEmptyComponent?: JSX.Element | React.ComponentType<{}>;
+  listEmptyComponent?: React.JSX.Element | React.ComponentType<{}>;
   /** use the ListLoaderComponent prop when no results are loading. */
-  listLoaderComponent?: JSX.Element | React.ComponentType<{}>;
+  listLoaderComponent?: React.JSX.Element | React.ComponentType<{}>;
   listHoverColor?: string;
   listUnderlayColor?: string;
   listViewDisplayed?: 'auto' | boolean;
@@ -415,13 +415,13 @@ interface GooglePlacesAutocompleteProps {
   preProcess?: (text: string) => string;
   query: Query | Object;
   renderDescription?: (description: DescriptionRow) => string;
-  renderHeaderComponent?: () => JSX.Element | React.ComponentType<{}>;
-  renderLeftButton?: () => JSX.Element | React.ComponentType<{}>;
-  renderRightButton?: () => JSX.Element | React.ComponentType<{}>;
+  renderHeaderComponent?: () => React.JSX.Element | React.ComponentType<{}>;
+  renderLeftButton?: () => React.JSX.Element | React.ComponentType<{}>;
+  renderRightButton?: () => React.JSX.Element | React.ComponentType<{}>;
   renderRow?: (
     data: GooglePlaceData,
     index: number,
-  ) => JSX.Element | React.ComponentType<{}>;
+  ) => React.JSX.Element | React.ComponentType<{}>;
   /** sets the request URL to something other than the google api.  Helpful if you want web support or to use your own api. */
   requestUrl?: RequestUrl;
   styles?: Partial<Styles> | Object;
