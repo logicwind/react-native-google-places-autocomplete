@@ -337,7 +337,6 @@ interface Query<T = AutocompleteRequestType> {
   rankby?: string;
   type?: T;
   strictbounds?: boolean;
-  /** @deprecated @see https://github.com/FaridSafi/react-native-google-places-autocomplete/pull/384 */
   types?: T;
 }
 
