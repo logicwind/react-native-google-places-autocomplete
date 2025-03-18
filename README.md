@@ -31,13 +31,13 @@
 **Step 1.**
 
 ```
-npm install @logicwind/react-native-google-places-autocomplete
+npm install github:logicwind/react-native-google-places-autocomplete#dev
 ```
 
 or
 
 ```
-yarn add @logicwind/react-native-google-places-autocomplete
+yarn add github:logicwind/react-native-google-places-autocomplete#dev
 ```
 
 **Step 2.**
