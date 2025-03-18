@@ -333,9 +333,6 @@ export const GooglePlacesAutocomplete = forwardRef((props, ref) => {
           }),
       );
 
-      request.withCredentials = requestShouldUseWithCredentials();
-      setRequestHeaders(request, getRequestHeaders(props.requestUrl));
-
       request.send();
     } else if (rowData.isCurrentLocation === true) {
       // display loader
